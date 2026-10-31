@@ -17,8 +17,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Install, build, and upload
         uses: withastro/action@v3
-        # with:
-        #   node-version: 22 # 若默认版本不符可在此指定
+        with:
+           node-version: 22 # 若默认版本不符可在此指定
   deploy:
     needs: build
     runs-on: ubuntu-latest
